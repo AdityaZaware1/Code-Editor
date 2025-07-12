@@ -5,10 +5,10 @@
             "use" : "@vercel/node"
         }
     ],
-    "routes" : [
-        {
-            "src" : "/(.*)",
-            "handle" : "filesystem"
-        }
-    ]
+    "version": 2,
+      "routes": [
+        { "handle": "filesystem" },
+        { "src": "/.*", "dest": "/index.html" }
+      ]
+
 }
